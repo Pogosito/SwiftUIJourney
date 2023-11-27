@@ -48,7 +48,7 @@ struct PricingView: View {
 				Text(price)
 					.font(.system(size: 40, weight: .heavy, design:.rounded))
 					.foregroundColor(textColor)
-				Text(Chap4Strings.perMonth)
+				Text(Chap4.Strings.perMonth)
 					.font(.headline)
 					.foregroundColor(textColor)
 			}
@@ -67,5 +67,23 @@ struct PricingView: View {
 					.offset(x: 0, y: inscriptionViewModel.yPosition)
 			}
 		}
+	}
+
+	static func makePricingView(
+		systemImageViewModel: SystemImageViewModel? = nil,
+		title: String,
+		price: String,
+		textColor: Color,
+		bgColor: Color,
+		inscriptionViewModel: InscriptionViewModel? = nil
+	) -> some View {
+		PricingView(
+			systemImageViewModel: systemImageViewModel,
+			title: title,
+			price: price,
+			textColor: textColor,
+			bgColor: bgColor,
+			inscriptionViewModel: inscriptionViewModel
+		)
 	}
 }

@@ -10,13 +10,17 @@ import SwiftUI
 struct Header: View {
 
 	var body: some View {
-		VStack(alignment: .leading, spacing: 2) {
-			Text(Chap4Strings.choose)
-				.font(.system(.largeTitle, design: .rounded))
-				.fontWeight(.black)
-			Text(Chap4Strings.yourPlan)
-				.font(.system(.largeTitle, design: .rounded))
-				.fontWeight(.black)
+		HStack {
+			VStack(alignment: .leading, spacing: 2) {
+				Text(Chap4.Strings.choose)
+					.font(.system(.largeTitle, design: .rounded))
+					.fontWeight(.black)
+				Text(Chap4.Strings.yourPlan)
+					.font(.system(.largeTitle, design: .rounded))
+					.fontWeight(.black)
+			}
+			Spacer()
 		}
+		.padding()
 	}
 }

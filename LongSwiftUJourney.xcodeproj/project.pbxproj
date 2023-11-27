@@ -14,6 +14,8 @@
 		04F402962B132C37002C8C00 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402952B132C37002C8C00 /* Header.swift */; };
 		04F402982B132C95002C8C00 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402972B132C95002C8C00 /* PricingView.swift */; };
 		04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402992B1336F0002C8C00 /* Constants.swift */; };
+		EA7E57422B14742B0086CCD3 /* Exercise_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */; };
+		EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		04F402952B132C37002C8C00 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		04F402972B132C95002C8C00 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
 		04F402992B1336F0002C8C00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_1.swift; sourceTree = "<group>"; };
+		EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		04F402942B132C04002C8C00 /* Chapter 4 */ = {
 			isa = PBXGroup;
 			children = (
+				EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */,
+				EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */,
 				04F402952B132C37002C8C00 /* Header.swift */,
 				04F402972B132C95002C8C00 /* PricingView.swift */,
 				04F402992B1336F0002C8C00 /* Constants.swift */,
@@ -154,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */,
+				EA7E57422B14742B0086CCD3 /* Exercise_4_1.swift in Sources */,
 				04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */,
 				04F402892B1324EC002C8C00 /* ContentView.swift in Sources */,
 				04F402962B132C37002C8C00 /* Header.swift in Sources */,

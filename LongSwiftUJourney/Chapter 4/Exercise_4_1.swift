@@ -1,25 +1,25 @@
 //
-//  ContentView.swift
+//  Exercise_4_1.swift
 //  LongSwiftUJourney
 //
-//  Created by Pogos Anesyan on 26.11.2023.
+//  Created by Анесян Погос Артурович on 27.11.2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct Exercise_4_1: View {
 
 	var body: some View {
 		VStack {
 			Header()
 			HStack {
-				makePricingView(
+				PricingView.makePricingView(
 					title: Chap4.Strings.basic,
 					price: Chap4.Strings.nineDollars,
 					textColor: .white,
 					bgColor: .purple
 				)
-				makePricingView(
+				PricingView.makePricingView(
 					title: Chap4.Strings.pro,
 					price: Chap4.Strings.nineDollars,
 					textColor: .black,
@@ -32,7 +32,7 @@ struct ContentView: View {
 			}
 			.padding()
 
-			makePricingView(
+			PricingView.makePricingView(
 				systemImageViewModel: .init(
 					imageSystemName: Chap4.SystemIconNames.wandAndRays,
 					foregroundColor: .white,
@@ -52,28 +52,10 @@ struct ContentView: View {
 			Spacer()
 		}
 	}
-
-	func makePricingView(
-		systemImageViewModel: SystemImageViewModel? = nil,
-		title: String,
-		price: String,
-		textColor: Color,
-		bgColor: Color,
-		inscriptionViewModel: InscriptionViewModel? = nil
-	) -> some View {
-		PricingView(
-			systemImageViewModel: systemImageViewModel,
-			title: title,
-			price: price,
-			textColor: textColor,
-			bgColor: bgColor,
-			inscriptionViewModel: inscriptionViewModel
-		)
-	}
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Exercise_4_1_Preview: PreviewProvider {
 	static var previews: some View {
-		ContentView()
+		Exercise_4_1()
 	}
 }
