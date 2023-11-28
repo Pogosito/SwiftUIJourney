@@ -16,6 +16,7 @@
 		04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402992B1336F0002C8C00 /* Constants.swift */; };
 		EA7E57422B14742B0086CCD3 /* Exercise_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */; };
 		EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */; };
+		EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E42B16399E00C42DD2 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		04F402992B1336F0002C8C00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_1.swift; sourceTree = "<group>"; };
 		EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_2.swift; sourceTree = "<group>"; };
+		EAA1B8E42B16399E00C42DD2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				04F402862B1324EC002C8C00 /* LongSwiftUJourneyApp.swift */,
 				04F402882B1324EC002C8C00 /* ContentView.swift */,
 				04F402942B132C04002C8C00 /* Chapter 4 */,
+				EAA1B8E32B16396600C42DD2 /* Chapter 5 */,
 				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
 				04F4028C2B1324F1002C8C00 /* Preview Content */,
 			);
@@ -88,6 +91,14 @@
 				04F402992B1336F0002C8C00 /* Constants.swift */,
 			);
 			path = "Chapter 4";
+			sourceTree = "<group>";
+		};
+		EAA1B8E32B16396600C42DD2 /* Chapter 5 */ = {
+			isa = PBXGroup;
+			children = (
+				EAA1B8E42B16399E00C42DD2 /* CardView.swift */,
+			);
+			path = "Chapter 5";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				04F402892B1324EC002C8C00 /* ContentView.swift in Sources */,
 				04F402962B132C37002C8C00 /* Header.swift in Sources */,
 				04F402872B1324EC002C8C00 /* LongSwiftUJourneyApp.swift in Sources */,
+				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
 				04F402982B132C95002C8C00 /* PricingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
