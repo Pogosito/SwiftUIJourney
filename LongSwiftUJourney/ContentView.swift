@@ -11,64 +11,118 @@ struct ContentView: View {
 
 	var body: some View {
 		VStack {
-			Header()
-			HStack {
-				makePricingView(
-					title: Chap4.Strings.basic,
-					price: Chap4.Strings.nineDollars,
-					textColor: .white,
-					bgColor: .purple
-				)
-				makePricingView(
-					title: Chap4.Strings.pro,
-					price: Chap4.Strings.nineDollars,
-					textColor: .black,
-					bgColor: Chap4.Colors.proGray,
-					inscriptionViewModel: .init(
-						inscription: Chap4.Strings.bestForDesigners,
-						yPosition: 87
-					)
-				)
-			}
-			.padding()
+			Spacer()
+			Group {
+				Button {
+					print("Hello world tapped")
+				} label: {
+					Text("Hello world")
+						.padding()
+						.background(Color.purple)
+						.foregroundColor(.white)
+						.font(.title)
+				}
 
-			makePricingView(
-				systemImageViewModel: .init(
-					imageSystemName: Chap4.SystemIconNames.wandAndRays,
-					foregroundColor: .white,
-					size: 30
-				),
-				title: Chap4.Strings.team,
-				price: Chap4.Strings.twoHundredNinetyNine,
-				textColor: .white,
-				bgColor: Chap4.Colors.teamBackgroundColor,
-				inscriptionViewModel: .init(
-					inscription: Chap4.Strings.perfectForTeamWith20Members,
-					yPosition: 108
-				)
-			)
-			.padding(.horizontal)
+				Button {
+					print("Hello world 2")
+				} label: {
+					Text("Hello world 2")
+						.foregroundColor(.purple)
+						.font(.title)
+						.padding()
+						.border(Color.purple, width: 5)
+				}
+
+				Button {
+					print("Hello world 3")
+				} label: {
+					Text("Hello world 3")
+						.fontWeight(.bold)
+						.foregroundColor(.white)
+						.font(.title)
+						.padding()
+						.background(Color.purple)
+						.padding(10)
+						.border(Color.purple, width: 5)
+				}
+
+				Button {
+					print("Hello world 4")
+				} label: {
+					Text("Hello world 4")
+						.fontWeight(.bold)
+						.foregroundColor(.white)
+						.font(.title)
+						.padding()
+						.background(Color.purple)
+						.cornerRadius(40)
+						.padding(10)
+						.overlay {
+							RoundedRectangle(cornerRadius: 40)
+								.stroke(.purple, lineWidth: 5)
+						}
+				}
+			}
+
+			Spacer()
+
+			Group {
+				Button {
+					print("Delete button tapped 1")
+				} label: {
+					Image(systemName: "trash")
+						.font(.largeTitle)
+						.foregroundColor(.red)
+				}
+
+				Button {
+					print("Delete button tapped 2")
+				} label: {
+					Image(systemName: "trash")
+						.padding()
+						.font(.largeTitle)
+						.foregroundColor(.white)
+						.background(Color.red)
+						.clipShape(Circle())
+				}
+
+				Button {
+					print("Delete button tapped 3")
+				} label: {
+					HStack {
+						Image(systemName: "trash")
+							.font(.title)
+							.foregroundColor(.white)
+						Text("Delete")
+							.fontWeight(.semibold)
+							.foregroundColor(.white)
+							.font(.title)
+					}
+					.padding()
+					.background(Color.red)
+					.clipShape(Capsule())
+				}
+
+				Button {
+					print("Delete button tapped 4")
+				} label: {
+					Label(title: {
+						Text("Delete")
+							.fontWeight(.semibold)
+							.font(.title)
+					}, icon: {
+						Image(systemName: "trash")
+							.font(.title)
+					})
+					.foregroundColor(.white)
+					.padding()
+					.background(Color.blue)
+					.clipShape(Capsule())
+				}
+			}
 
 			Spacer()
 		}
-	}
-
-	func makePricingView(
-		systemImageViewModel: SystemImageViewModel? = nil,
-		title: String,
-		price: String,
-		textColor: Color,
-		bgColor: Color,
-		inscriptionViewModel: InscriptionViewModel? = nil
-	) -> some View {
-		PricingView(
-			systemImageViewModel: systemImageViewModel,
-			title: title,
-			price: price,
-			textColor: textColor,
-			bgColor: bgColor,
-			inscriptionViewModel: inscriptionViewModel
-		)
 	}
 }
 
