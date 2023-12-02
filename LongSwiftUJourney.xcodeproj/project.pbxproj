@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04F402872B1324EC002C8C00 /* LongSwiftUJourneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402862B1324EC002C8C00 /* LongSwiftUJourneyApp.swift */; };
-		04F402892B1324EC002C8C00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402882B1324EC002C8C00 /* ContentView.swift */; };
 		04F4028B2B1324F1002C8C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F4028A2B1324F1002C8C00 /* Assets.xcassets */; };
 		04F4028E2B1324F1002C8C00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F4028D2B1324F1002C8C00 /* Preview Assets.xcassets */; };
 		04F402962B132C37002C8C00 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402952B132C37002C8C00 /* Header.swift */; };
@@ -16,7 +15,11 @@
 		04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402992B1336F0002C8C00 /* Constants.swift */; };
 		EA7E57422B14742B0086CCD3 /* Exercise_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */; };
 		EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */; };
-		EA993D1A2B19EA9F00FB7D4E /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA993D192B19EA9F00FB7D4E /* GradientButtonStyle.swift */; };
+		EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA993D192B19EA9F00FB7D4E /* ButtonStyles.swift */; };
+		EA993D372B1B7FFF00FB7D4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA993D362B1B7FFF00FB7D4E /* ContentView.swift */; };
+		EA993D392B1B801700FB7D4E /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA993D382B1B801700FB7D4E /* States.swift */; };
+		EA993D3B2B1B896000FB7D4E /* PlayStopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA993D3A2B1B896000FB7D4E /* PlayStopButton.swift */; };
+		EA993D3D2B1B89F100FB7D4E /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA993D3C2B1B89F100FB7D4E /* CounterButton.swift */; };
 		EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E42B16399E00C42DD2 /* CardView.swift */; };
 		EAA1B8E72B175BCB00C42DD2 /* CardViewsVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E62B175BCB00C42DD2 /* CardViewsVertical.swift */; };
 		EAA1B8E92B17616100C42DD2 /* CardViewsHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E82B17616100C42DD2 /* CardViewsHorizontal.swift */; };
@@ -26,7 +29,6 @@
 /* Begin PBXFileReference section */
 		04F402832B1324EC002C8C00 /* LongSwiftUJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongSwiftUJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F402862B1324EC002C8C00 /* LongSwiftUJourneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongSwiftUJourneyApp.swift; sourceTree = "<group>"; };
-		04F402882B1324EC002C8C00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04F4028A2B1324F1002C8C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F4028D2B1324F1002C8C00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04F402952B132C37002C8C00 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -34,7 +36,11 @@
 		04F402992B1336F0002C8C00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_1.swift; sourceTree = "<group>"; };
 		EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_2.swift; sourceTree = "<group>"; };
-		EA993D192B19EA9F00FB7D4E /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		EA993D192B19EA9F00FB7D4E /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		EA993D362B1B7FFF00FB7D4E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA993D382B1B801700FB7D4E /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		EA993D3A2B1B896000FB7D4E /* PlayStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStopButton.swift; sourceTree = "<group>"; };
+		EA993D3C2B1B89F100FB7D4E /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
 		EAA1B8E42B16399E00C42DD2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		EAA1B8E62B175BCB00C42DD2 /* CardViewsVertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewsVertical.swift; sourceTree = "<group>"; };
 		EAA1B8E82B17616100C42DD2 /* CardViewsHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewsHorizontal.swift; sourceTree = "<group>"; };
@@ -72,10 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				04F402862B1324EC002C8C00 /* LongSwiftUJourneyApp.swift */,
-				04F402882B1324EC002C8C00 /* ContentView.swift */,
+				EA993D362B1B7FFF00FB7D4E /* ContentView.swift */,
 				04F402942B132C04002C8C00 /* Chapter 4 */,
 				EAA1B8E32B16396600C42DD2 /* Chapter 5 */,
 				EAA1B8EA2B18718200C42DD2 /* Chapter 6 */,
+				EA993D352B1B7F7C00FB7D4E /* Chapter 7 */,
 				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
 				04F4028C2B1324F1002C8C00 /* Preview Content */,
 			);
@@ -102,6 +109,16 @@
 			path = "Chapter 4";
 			sourceTree = "<group>";
 		};
+		EA993D352B1B7F7C00FB7D4E /* Chapter 7 */ = {
+			isa = PBXGroup;
+			children = (
+				EA993D382B1B801700FB7D4E /* States.swift */,
+				EA993D3A2B1B896000FB7D4E /* PlayStopButton.swift */,
+				EA993D3C2B1B89F100FB7D4E /* CounterButton.swift */,
+			);
+			path = "Chapter 7";
+			sourceTree = "<group>";
+		};
 		EAA1B8E32B16396600C42DD2 /* Chapter 5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				EAA1B8EB2B1871AC00C42DD2 /* Buttons.swift */,
-				EA993D192B19EA9F00FB7D4E /* GradientButtonStyle.swift */,
+				EA993D192B19EA9F00FB7D4E /* ButtonStyles.swift */,
 			);
 			path = "Chapter 6";
 			sourceTree = "<group>";
@@ -192,16 +209,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */,
+				EA993D3D2B1B89F100FB7D4E /* CounterButton.swift in Sources */,
 				EA7E57422B14742B0086CCD3 /* Exercise_4_1.swift in Sources */,
+				EA993D372B1B7FFF00FB7D4E /* ContentView.swift in Sources */,
 				04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */,
 				EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */,
-				04F402892B1324EC002C8C00 /* ContentView.swift in Sources */,
+				EA993D3B2B1B896000FB7D4E /* PlayStopButton.swift in Sources */,
 				EAA1B8E72B175BCB00C42DD2 /* CardViewsVertical.swift in Sources */,
 				04F402962B132C37002C8C00 /* Header.swift in Sources */,
-				EA993D1A2B19EA9F00FB7D4E /* GradientButtonStyle.swift in Sources */,
+				EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */,
 				EAA1B8E92B17616100C42DD2 /* CardViewsHorizontal.swift in Sources */,
 				04F402872B1324EC002C8C00 /* LongSwiftUJourneyApp.swift in Sources */,
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
+				EA993D392B1B801700FB7D4E /* States.swift in Sources */,
 				04F402982B132C95002C8C00 /* PricingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  GradientButtonStyle.swift
+//  ButtonStyles.swift
 //  LongSwiftUJourney
 //
 //  Created by Анесян Погос Артурович on 01.12.2023.
@@ -10,7 +10,7 @@ import SwiftUI
 struct GradientButtonStyle: ButtonStyle {
 
 	func makeBody(configuration: Configuration) -> some View {
-		configuration.label
+		return configuration.label
 			.frame(minWidth: 0, maxWidth: .infinity)
 			.padding()
 			.foregroundColor(Color.white)
@@ -27,3 +27,10 @@ struct GradientButtonStyle: ButtonStyle {
 	}
 }
 
+struct RotationButtonStyle: ButtonStyle {
+
+	func makeBody(configuration: Configuration) -> some View {
+		configuration.label
+			.rotationEffect(configuration.isPressed ? .degrees(45) : .degrees(0))
+	}
+}
