@@ -11,18 +11,25 @@ struct CounterButton: View {
 
 	@Binding var counter: Int
 	let color: Color
+	var textColor: Color = .white
 
 	var body: some View {
 		Button {
 			counter += 1
 		} label: {
-			Text("\(counter)")
-				.frame(width: 200, height: 200, alignment: .center)
-				.font(.system(size: 100, weight: .regular, design: .rounded))
-				.background(color)
-				.clipShape(Circle())
-				.foregroundColor(.white)
-				.minimumScaleFactor(0.2)
+			Circle()
+				.overlay {
+					Text("\(counter)")
+						.font(.system(
+							size: 100,
+							weight: .bold,
+							design: .rounded)
+						)
+						.foregroundColor(textColor)
+						.padding()
+						.minimumScaleFactor(0.1)
+				}
+				.foregroundColor(color)
 		}
 	}
 }

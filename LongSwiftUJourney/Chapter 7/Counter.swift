@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  Counter.swift
 //  LongSwiftUJourney
 //
-//  Created by Pogos Anesyan on 26.11.2023.
+//  Created by Анесян Погос Артурович on 03.12.2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct Counter: View {
 
 	@State private var counter1 = 0
 	@State private var counter2 = 0
@@ -40,8 +40,8 @@ struct ContentView: View {
 	}
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Counter_Previews: PreviewProvider {
 	static var previews: some View {
-		ContentView()
+		Counter()
 	}
 }

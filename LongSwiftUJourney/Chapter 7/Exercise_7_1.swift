@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  Exercise_7_1.swift
 //  LongSwiftUJourney
 //
-//  Created by Pogos Anesyan on 26.11.2023.
+//  Created by Анесян Погос Артурович on 03.12.2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct Exercise_7_1: View {
 
 	@State private var counter1 = 0
 	@State private var counter2 = 0
@@ -40,8 +40,9 @@ struct ContentView: View {
 	}
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Exercise_7_1Preview: PreviewProvider {
+
 	static var previews: some View {
-		ContentView()
+		Exercise_7_1()
 	}
 }

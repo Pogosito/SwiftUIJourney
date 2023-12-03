@@ -9,15 +9,16 @@ import SwiftUI
 
 struct States: View {
 
-	@State private var isPlaying: Bool = false
+	@State private var counter = 10000000000
 
 	var body: some View {
-		Button {
-			isPlaying.toggle()
-		} label: {
-			Image(systemName: isPlaying ? "stop.circle.fill" : "play.circle.fill")
-				.font(.system(size: 150))
-				.foregroundColor(isPlaying ? .red : .green)
+		VStack {
+
+			PlayStopButton()
+
+			CounterButton(counter: $counter, color: .gray)
+			CounterButton(counter: $counter, color: .green)
+			CounterButton(counter: $counter, color: .brown)
 		}
 	}
 }
