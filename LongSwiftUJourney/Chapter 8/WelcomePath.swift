@@ -20,7 +20,7 @@ struct WelcomePath: View {
 				}
 				.fill(.green)
 				.background(Color.red)
-				
+
 				Path { path in
 					path.move(to: .init(x: 100, y: 100))
 					path.addArc(
