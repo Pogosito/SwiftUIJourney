@@ -19,9 +19,9 @@ struct LineLoadingIndicator: View {
 
 			RoundedRectangle(cornerRadius: 5)
 				.frame(width: 30, height: 10)
-				.foregroundColor(Color.green)
+				.foregroundColor(Color.orange)
 				.offset(
-					x: isRunning ? 80 : -80,
+					x: isRunning ? -80 : 80,
 					y: 0
 				)
 		}

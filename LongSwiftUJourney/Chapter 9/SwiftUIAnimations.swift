@@ -68,8 +68,8 @@ struct SwiftUIAnimations: View {
 						.onTapGesture {
 							withAnimation(
 								isRotated
-								? .linear.repeatForever(autoreverses: false)
-								: Animation.default
+								? Animation.default
+								: .linear.repeatForever(autoreverses: false)
 							) {
 								isRotated.toggle()
 							}
@@ -81,12 +81,22 @@ struct SwiftUIAnimations: View {
 					).onTapGesture {
 						withAnimation(
 							isRunning
-							? .linear.repeatForever(autoreverses: true)
-							: Animation.default
+							? Animation.default
+							: .linear.repeatForever(autoreverses: true)
 						) {
 							isRunning.toggle()
 						}
 					}
+				}
+
+				HStack {
+					DotsLoader()
+						.padding(.horizontal)
+					CircleProgressIndicator()
+				}
+
+				HStack {
+					ShapeChangerButton()
 				}
 			}
 		}

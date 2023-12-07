@@ -16,6 +16,9 @@
 		EA2774942B20DD3D006E9847 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774932B20DD3D006E9847 /* Heart.swift */; };
 		EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */; };
 		EA2774982B20E7A6006E9847 /* LineLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774972B20E7A6006E9847 /* LineLoadingIndicator.swift */; };
+		EA27749A2B21DAD0006E9847 /* CircleProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774992B21DAD0006E9847 /* CircleProgressIndicator.swift */; };
+		EA27749C2B21DF10006E9847 /* DotsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27749B2B21DF10006E9847 /* DotsLoader.swift */; };
+		EA27749E2B2229AC006E9847 /* ShapeChangerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27749D2B2229AC006E9847 /* ShapeChangerButton.swift */; };
 		EA46C4792B1C765B00D940DD /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C4782B1C765B00D940DD /* Counter.swift */; };
 		EA46C47B2B1C775800D940DD /* WelcomePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C47A2B1C775800D940DD /* WelcomePath.swift */; };
 		EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C47C2B1DD2B600D940DD /* Dome.swift */; };
@@ -47,6 +50,9 @@
 		EA2774932B20DD3D006E9847 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingIndicator.swift; sourceTree = "<group>"; };
 		EA2774972B20E7A6006E9847 /* LineLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLoadingIndicator.swift; sourceTree = "<group>"; };
+		EA2774992B21DAD0006E9847 /* CircleProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressIndicator.swift; sourceTree = "<group>"; };
+		EA27749B2B21DF10006E9847 /* DotsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsLoader.swift; sourceTree = "<group>"; };
+		EA27749D2B2229AC006E9847 /* ShapeChangerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeChangerButton.swift; sourceTree = "<group>"; };
 		EA46C4782B1C765B00D940DD /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		EA46C47A2B1C775800D940DD /* WelcomePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePath.swift; sourceTree = "<group>"; };
 		EA46C47C2B1DD2B600D940DD /* Dome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dome.swift; sourceTree = "<group>"; };
@@ -146,9 +152,12 @@
 			isa = PBXGroup;
 			children = (
 				EA46C4832B1E500200D940DD /* SwiftUIAnimations.swift */,
+				EA2774992B21DAD0006E9847 /* CircleProgressIndicator.swift */,
 				EA2774932B20DD3D006E9847 /* Heart.swift */,
 				EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */,
 				EA2774972B20E7A6006E9847 /* LineLoadingIndicator.swift */,
+				EA27749B2B21DF10006E9847 /* DotsLoader.swift */,
+				EA27749D2B2229AC006E9847 /* ShapeChangerButton.swift */,
 			);
 			path = "Chapter 9";
 			sourceTree = "<group>";
@@ -261,7 +270,9 @@
 				EA993D372B1B7FFF00FB7D4E /* ContentView.swift in Sources */,
 				04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */,
 				EA2774982B20E7A6006E9847 /* LineLoadingIndicator.swift in Sources */,
+				EA27749C2B21DF10006E9847 /* DotsLoader.swift in Sources */,
 				EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */,
+				EA27749E2B2229AC006E9847 /* ShapeChangerButton.swift in Sources */,
 				EA993D3B2B1B896000FB7D4E /* PlayStopButton.swift in Sources */,
 				EA46C4792B1C765B00D940DD /* Counter.swift in Sources */,
 				EAA1B8E72B175BCB00C42DD2 /* CardViewsVertical.swift in Sources */,
@@ -276,6 +287,7 @@
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
 				EA993D392B1B801700FB7D4E /* States.swift in Sources */,
 				EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */,
+				EA27749A2B21DAD0006E9847 /* CircleProgressIndicator.swift in Sources */,
 				04F402982B132C95002C8C00 /* PricingView.swift in Sources */,
 				EA46C47B2B1C775800D940DD /* WelcomePath.swift in Sources */,
 				EA2774942B20DD3D006E9847 /* Heart.swift in Sources */,
