@@ -20,6 +20,10 @@ struct SwiftUIAnimations: View {
 	@State private var isRotated = false
 	@State private var isRunning = false
 
+	@State private var scaleShow = false
+	@State private var offsetShow = false
+	@State private var comboShow = false
+
 	var body: some View {
 		ScrollView {
 			VStack {
@@ -98,6 +102,77 @@ struct SwiftUIAnimations: View {
 				HStack {
 					ShapeChangerButton()
 				}
+
+				makeTitle(with: "Transitions")
+
+				HStack(alignment: .top) {
+
+					VStack {
+						makeRoundedRectangle(
+							size: .init(width: 100, height: 100),
+							with: "scale",
+							and: .green
+						).onTapGesture {
+							withAnimation(.spring()) {
+								self.scaleShow.toggle()
+							}
+						}
+
+						if scaleShow {
+							makeRoundedRectangle(
+								with: "",
+								and: .purple
+							)
+							.transition(
+								.scale(scale: 0, anchor: .bottom)
+							)
+						}
+					}
+
+					VStack {
+						makeRoundedRectangle(
+							size: .init(width: 100, height: 100),
+							with: "offset",
+							and: .green
+						).onTapGesture {
+							withAnimation(.spring()) {
+								self.offsetShow.toggle()
+							}
+						}
+
+						if offsetShow {
+							makeRoundedRectangle(
+								with: "",
+								and: .purple
+							)
+							.transition(
+								.offset(x: -600, y: 0)
+							)
+						}
+					}
+
+					VStack {
+						makeRoundedRectangle(
+							size: .init(width: 100, height: 100),
+							with: "combo",
+							and: .green
+						).onTapGesture {
+							withAnimation(.spring()) {
+								self.comboShow.toggle()
+							}
+						}
+
+						if comboShow {
+							makeRoundedRectangle(
+								with: "",
+								and: .purple
+							)
+							.transition(
+								.offset(x: -600, y: 0)
+							)
+						}
+					}
+				}
 			}
 		}
 	}
@@ -113,6 +188,27 @@ struct SwiftUIAnimations: View {
 				)
 			Spacer()
 		}
+	}
+
+	func makeRoundedRectangle(
+		size: CGSize = .init(width: 100, height: 100),
+		with text: String,
+		and foregroundColor: Color
+	) -> some View {
+		RoundedRectangle(cornerRadius: 10)
+			.frame(width: size.width, height: size.height)
+			.foregroundColor(foregroundColor)
+			.overlay {
+				Text(text)
+					.font(
+						.system(
+							.title,
+							design: .rounded
+						)
+					)
+					.bold()
+					.foregroundColor(.white)
+			}
 	}
 }
 
