@@ -13,6 +13,7 @@
 		04F402962B132C37002C8C00 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402952B132C37002C8C00 /* Header.swift */; };
 		04F402982B132C95002C8C00 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402972B132C95002C8C00 /* PricingView.swift */; };
 		04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402992B1336F0002C8C00 /* Constants.swift */; };
+		EA1DF7A02B27333200FB7816 /* ListForEachIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1DF79F2B27333200FB7816 /* ListForEachIdentifiable.swift */; };
 		EA2774942B20DD3D006E9847 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774932B20DD3D006E9847 /* Heart.swift */; };
 		EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */; };
 		EA2774982B20E7A6006E9847 /* LineLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774972B20E7A6006E9847 /* LineLoadingIndicator.swift */; };
@@ -49,6 +50,7 @@
 		04F402952B132C37002C8C00 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		04F402972B132C95002C8C00 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
 		04F402992B1336F0002C8C00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA1DF79F2B27333200FB7816 /* ListForEachIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListForEachIdentifiable.swift; sourceTree = "<group>"; };
 		EA2774932B20DD3D006E9847 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingIndicator.swift; sourceTree = "<group>"; };
 		EA2774972B20E7A6006E9847 /* LineLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLoadingIndicator.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				EA993D352B1B7F7C00FB7D4E /* Chapter 7 */,
 				EA46C4772B1C72D300D940DD /* Chapter 8 */,
 				EA46C4822B1E4FB900D940DD /* Chapter 9 */,
+				EA1DF79E2B27330900FB7816 /* Chapter 10 */,
 				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
 				04F4028C2B1324F1002C8C00 /* Preview Content */,
 			);
@@ -141,6 +144,14 @@
 			path = "Chapter 4";
 			sourceTree = "<group>";
 		};
+		EA1DF79E2B27330900FB7816 /* Chapter 10 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1DF79F2B27333200FB7816 /* ListForEachIdentifiable.swift */,
+			);
+			path = "Chapter 10";
+			sourceTree = "<group>";
+		};
 		EA46C4772B1C72D300D940DD /* Chapter 8 */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +166,8 @@
 		EA46C4822B1E4FB900D940DD /* Chapter 9 */ = {
 			isa = PBXGroup;
 			children = (
-				EAF033A52B26D662008A571E /* AnyTransition+Extension.swift */,
 				EA46C4832B1E500200D940DD /* SwiftUIAnimations.swift */,
+				EAF033A52B26D662008A571E /* AnyTransition+Extension.swift */,
 				EA2774992B21DAD0006E9847 /* CircleProgressIndicator.swift */,
 				EA2774932B20DD3D006E9847 /* Heart.swift */,
 				EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */,
@@ -284,6 +295,7 @@
 				EAA1B8E72B175BCB00C42DD2 /* CardViewsVertical.swift in Sources */,
 				04F402962B132C37002C8C00 /* Header.swift in Sources */,
 				EAF033A62B26D662008A571E /* AnyTransition+Extension.swift in Sources */,
+				EA1DF7A02B27333200FB7816 /* ListForEachIdentifiable.swift in Sources */,
 				EA46C4812B1DD8DE00D940DD /* ProgressView.swift in Sources */,
 				EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */,
 				EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */,

@@ -22,4 +22,11 @@ extension AnyTransition {
 			removal: .offset(x: -600)
 		)
 	}
+
+	static var scaleFromButtonAndOpacity: AnyTransition {
+		AnyTransition.scale(
+			scale: 0,
+			anchor: .bottom
+		).combined(with: .opacity)
+	}
 }
