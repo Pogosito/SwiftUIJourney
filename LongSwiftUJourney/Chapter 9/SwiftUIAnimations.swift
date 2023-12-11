@@ -23,6 +23,7 @@ struct SwiftUIAnimations: View {
 	@State private var scaleShow = false
 	@State private var offsetShow = false
 	@State private var comboShow = false
+	@State private var assymShow = false
 
 	var body: some View {
 		ScrollView {
@@ -105,74 +106,98 @@ struct SwiftUIAnimations: View {
 
 				makeTitle(with: "Transitions")
 
-				HStack(alignment: .top) {
+				VStack {
+					HStack(alignment: .top) {
 
-					VStack {
-						makeRoundedRectangle(
-							size: .init(width: 100, height: 100),
-							with: "scale",
-							and: .green
-						).onTapGesture {
-							withAnimation(.spring()) {
-								self.scaleShow.toggle()
+						VStack {
+							makeRoundedRectangle(
+								size: .init(width: 100, height: 100),
+								with: "scale",
+								and: .green
+							).onTapGesture {
+								withAnimation(.spring()) {
+									self.scaleShow.toggle()
+								}
+							}
+
+							if scaleShow {
+								makeRoundedRectangle(
+									with: "",
+									and: .purple
+								)
+								.transition(
+									.scale(scale: 0, anchor: .bottom)
+								)
 							}
 						}
 
-						if scaleShow {
+						VStack {
 							makeRoundedRectangle(
-								with: "",
-								and: .purple
-							)
-							.transition(
-								.scale(scale: 0, anchor: .bottom)
-							)
+								size: .init(width: 100, height: 100),
+								with: "offset",
+								and: .green
+							).onTapGesture {
+								withAnimation(.spring()) {
+									self.offsetShow.toggle()
+								}
+							}
+
+							if offsetShow {
+								makeRoundedRectangle(
+									with: "",
+									and: .purple
+								)
+								.transition(
+									.offset(x: -600, y: 0)
+								)
+							}
+						}
+
+						VStack {
+							makeRoundedRectangle(
+								size: .init(width: 100, height: 100),
+								with: "combo",
+								and: .green
+							).onTapGesture {
+								withAnimation(.spring()) {
+									self.comboShow.toggle()
+								}
+							}
+
+							if comboShow {
+								makeRoundedRectangle(
+									with: "",
+									and: .purple
+								)
+								.transition(.offsetScaleOpacity)
+							}
 						}
 					}
 
 					VStack {
 						makeRoundedRectangle(
 							size: .init(width: 100, height: 100),
-							with: "offset",
+							with: "assym",
 							and: .green
 						).onTapGesture {
 							withAnimation(.spring()) {
-								self.offsetShow.toggle()
+								self.assymShow.toggle()
 							}
 						}
 
-						if offsetShow {
+						if assymShow {
 							makeRoundedRectangle(
 								with: "",
 								and: .purple
 							)
-							.transition(
-								.offset(x: -600, y: 0)
-							)
-						}
-					}
-
-					VStack {
-						makeRoundedRectangle(
-							size: .init(width: 100, height: 100),
-							with: "combo",
-							and: .green
-						).onTapGesture {
-							withAnimation(.spring()) {
-								self.comboShow.toggle()
-							}
-						}
-
-						if comboShow {
-							makeRoundedRectangle(
-								with: "",
-								and: .purple
-							)
-							.transition(
-								.offset(x: -600, y: 0)
-							)
+							.transition(.scaleAndOffset)
 						}
 					}
 				}
+
+				makeTitle(with: "Exercise_9_1")
+
+				SubmitButton()
 			}
 		}
 	}
@@ -213,7 +238,7 @@ struct SwiftUIAnimations: View {
 }
 
 struct SwiftUIAnimations_Previews: PreviewProvider {
-	
+
 	static var previews: some View {
 		SwiftUIAnimations()
 	}

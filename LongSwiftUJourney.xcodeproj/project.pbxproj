@@ -37,6 +37,8 @@
 		EAA1B8E72B175BCB00C42DD2 /* CardViewsVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E62B175BCB00C42DD2 /* CardViewsVertical.swift */; };
 		EAA1B8E92B17616100C42DD2 /* CardViewsHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E82B17616100C42DD2 /* CardViewsHorizontal.swift */; };
 		EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8EB2B1871AC00C42DD2 /* Buttons.swift */; };
+		EAF033A62B26D662008A571E /* AnyTransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF033A52B26D662008A571E /* AnyTransition+Extension.swift */; };
+		EAF033A82B26D887008A571E /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF033A72B26D887008A571E /* SubmitButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		EAA1B8E62B175BCB00C42DD2 /* CardViewsVertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewsVertical.swift; sourceTree = "<group>"; };
 		EAA1B8E82B17616100C42DD2 /* CardViewsHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewsHorizontal.swift; sourceTree = "<group>"; };
 		EAA1B8EB2B1871AC00C42DD2 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		EAF033A52B26D662008A571E /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
+		EAF033A72B26D887008A571E /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		EA46C4822B1E4FB900D940DD /* Chapter 9 */ = {
 			isa = PBXGroup;
 			children = (
+				EAF033A52B26D662008A571E /* AnyTransition+Extension.swift */,
 				EA46C4832B1E500200D940DD /* SwiftUIAnimations.swift */,
 				EA2774992B21DAD0006E9847 /* CircleProgressIndicator.swift */,
 				EA2774932B20DD3D006E9847 /* Heart.swift */,
@@ -158,6 +163,7 @@
 				EA2774972B20E7A6006E9847 /* LineLoadingIndicator.swift */,
 				EA27749B2B21DF10006E9847 /* DotsLoader.swift */,
 				EA27749D2B2229AC006E9847 /* ShapeChangerButton.swift */,
+				EAF033A72B26D887008A571E /* SubmitButton.swift */,
 			);
 			path = "Chapter 9";
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 				EA46C4792B1C765B00D940DD /* Counter.swift in Sources */,
 				EAA1B8E72B175BCB00C42DD2 /* CardViewsVertical.swift in Sources */,
 				04F402962B132C37002C8C00 /* Header.swift in Sources */,
+				EAF033A62B26D662008A571E /* AnyTransition+Extension.swift in Sources */,
 				EA46C4812B1DD8DE00D940DD /* ProgressView.swift in Sources */,
 				EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */,
 				EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */,
@@ -287,6 +294,7 @@
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
 				EA993D392B1B801700FB7D4E /* States.swift in Sources */,
 				EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */,
+				EAF033A82B26D887008A571E /* SubmitButton.swift in Sources */,
 				EA27749A2B21DAD0006E9847 /* CircleProgressIndicator.swift in Sources */,
 				04F402982B132C95002C8C00 /* PricingView.swift in Sources */,
 				EA46C47B2B1C775800D940DD /* WelcomePath.swift in Sources */,
