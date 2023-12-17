@@ -16,6 +16,7 @@
 		54256E252B27A19D00618144 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E242B27A19D00618144 /* Restaurant.swift */; };
 		54256E3F2B2A258D00618144 /* BasicImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E3E2B2A258D00618144 /* BasicImageRow.swift */; };
 		54256E412B2A264000618144 /* FullImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E402B2A264000618144 /* FullImageRow.swift */; };
+		5437B8712B2F4CDC00BC39B0 /* Exercise_10_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5437B8702B2F4CDC00BC39B0 /* Exercise_10_1.swift */; };
 		EA1DF7A02B27333200FB7816 /* ListForEachIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1DF79F2B27333200FB7816 /* ListForEachIdentifiable.swift */; };
 		EA2774942B20DD3D006E9847 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774932B20DD3D006E9847 /* Heart.swift */; };
 		EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */; };
@@ -56,6 +57,7 @@
 		54256E242B27A19D00618144 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		54256E3E2B2A258D00618144 /* BasicImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicImageRow.swift; sourceTree = "<group>"; };
 		54256E402B2A264000618144 /* FullImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageRow.swift; sourceTree = "<group>"; };
+		5437B8702B2F4CDC00BC39B0 /* Exercise_10_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_10_1.swift; sourceTree = "<group>"; };
 		EA1DF79F2B27333200FB7816 /* ListForEachIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListForEachIdentifiable.swift; sourceTree = "<group>"; };
 		EA2774932B20DD3D006E9847 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		EA2774952B20E0B2006E9847 /* CircleLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingIndicator.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				54256E242B27A19D00618144 /* Restaurant.swift */,
 				54256E3E2B2A258D00618144 /* BasicImageRow.swift */,
 				54256E402B2A264000618144 /* FullImageRow.swift */,
+				5437B8702B2F4CDC00BC39B0 /* Exercise_10_1.swift */,
 			);
 			path = "Chapter 10";
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				54256E252B27A19D00618144 /* Restaurant.swift in Sources */,
 				EA993D3F2B1C616100FB7D4E /* Exercise_7_1.swift in Sources */,
 				04F402872B1324EC002C8C00 /* LongSwiftUJourneyApp.swift in Sources */,
+				5437B8712B2F4CDC00BC39B0 /* Exercise_10_1.swift in Sources */,
 				EA46C4842B1E500200D940DD /* SwiftUIAnimations.swift in Sources */,
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
 				EA993D392B1B801700FB7D4E /* States.swift in Sources */,
