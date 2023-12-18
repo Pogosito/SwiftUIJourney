@@ -32,6 +32,9 @@
 		EA46C47F2B1DD63500D940DD /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C47E2B1DD63500D940DD /* PlayButton.swift */; };
 		EA46C4812B1DD8DE00D940DD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C4802B1DD8DE00D940DD /* ProgressView.swift */; };
 		EA46C4842B1E500200D940DD /* SwiftUIAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C4832B1E500200D940DD /* SwiftUIAnimations.swift */; };
+		EA7D05E92B301803001C6560 /* Exercise_11_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D05E82B301802001C6560 /* Exercise_11_1.swift */; };
+		EA7D05EB2B301EF2001C6560 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D05EA2B301EF2001C6560 /* ArticleView.swift */; };
+		EA7D05ED2B30223B001C6560 /* ArticleDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D05EC2B30223B001C6560 /* ArticleDetailedView.swift */; };
 		EA7E57422B14742B0086CCD3 /* Exercise_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */; };
 		EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */; };
 		EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA993D192B19EA9F00FB7D4E /* ButtonStyles.swift */; };
@@ -75,6 +78,9 @@
 		EA46C47E2B1DD63500D940DD /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		EA46C4802B1DD8DE00D940DD /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		EA46C4832B1E500200D940DD /* SwiftUIAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimations.swift; sourceTree = "<group>"; };
+		EA7D05E82B301802001C6560 /* Exercise_11_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_11_1.swift; sourceTree = "<group>"; };
+		EA7D05EA2B301EF2001C6560 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		EA7D05EC2B30223B001C6560 /* ArticleDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailedView.swift; sourceTree = "<group>"; };
 		EA7E57412B14742B0086CCD3 /* Exercise_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_1.swift; sourceTree = "<group>"; };
 		EA7E57432B1474F50086CCD3 /* Exercise_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_4_2.swift; sourceTree = "<group>"; };
 		EA993D192B19EA9F00FB7D4E /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
@@ -162,6 +168,8 @@
 			children = (
 				5437B8742B2F5A4800BC39B0 /* HINavigationStack.swift */,
 				5437B8762B2F5BED00BC39B0 /* RestaurantDetailView.swift */,
+				EA7D05E82B301802001C6560 /* Exercise_11_1.swift */,
+				EA7D05EC2B30223B001C6560 /* ArticleDetailedView.swift */,
 			);
 			path = "Chapter 11";
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 				54256E3E2B2A258D00618144 /* BasicImageRow.swift */,
 				54256E402B2A264000618144 /* FullImageRow.swift */,
 				5437B8702B2F4CDC00BC39B0 /* Exercise_10_1.swift */,
+				EA7D05EA2B301EF2001C6560 /* ArticleView.swift */,
 			);
 			path = "Chapter 10";
 			sourceTree = "<group>";
@@ -315,6 +324,7 @@
 				EA2774982B20E7A6006E9847 /* LineLoadingIndicator.swift in Sources */,
 				54256E412B2A264000618144 /* FullImageRow.swift in Sources */,
 				EA27749C2B21DF10006E9847 /* DotsLoader.swift in Sources */,
+				EA7D05E92B301803001C6560 /* Exercise_11_1.swift in Sources */,
 				5437B8752B2F5A4800BC39B0 /* HINavigationStack.swift in Sources */,
 				5437B8772B2F5BED00BC39B0 /* RestaurantDetailView.swift in Sources */,
 				EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */,
@@ -328,6 +338,7 @@
 				EA46C4812B1DD8DE00D940DD /* ProgressView.swift in Sources */,
 				54256E3F2B2A258D00618144 /* BasicImageRow.swift in Sources */,
 				EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */,
+				EA7D05ED2B30223B001C6560 /* ArticleDetailedView.swift in Sources */,
 				EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */,
 				EAA1B8E92B17616100C42DD2 /* CardViewsHorizontal.swift in Sources */,
 				54256E252B27A19D00618144 /* Restaurant.swift in Sources */,
@@ -342,6 +353,7 @@
 				EA27749A2B21DAD0006E9847 /* CircleProgressIndicator.swift in Sources */,
 				04F402982B132C95002C8C00 /* PricingView.swift in Sources */,
 				EA46C47B2B1C775800D940DD /* WelcomePath.swift in Sources */,
+				EA7D05EB2B301EF2001C6560 /* ArticleView.swift in Sources */,
 				EA2774942B20DD3D006E9847 /* Heart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

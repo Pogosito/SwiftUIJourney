@@ -33,6 +33,29 @@ struct HINavigationStack: View {
 		Restaurant(name: "CASK Pub and Kitchen", image: "caskpubkitchen")
 	]
 
+	init() {
+		let navBarAppearance = UINavigationBarAppearance()
+
+		navBarAppearance.largeTitleTextAttributes = [
+			.foregroundColor: UIColor.red,
+			.font: UIFont(name: "ArialRoundedMTBold", size: 35)!
+		]
+
+		navBarAppearance.titleTextAttributes = [
+			.foregroundColor: UIColor.red,
+			.font: UIFont(name: "ArialRoundedMTBold", size: 20)!
+		]
+
+		navBarAppearance.setBackIndicatorImage(
+			UIImage(systemName: "arrow.turn.up.left"),
+			transitionMaskImage: UIImage(systemName: "arrow.turn.up.left")
+		)
+
+		UINavigationBar.appearance().standardAppearance = navBarAppearance
+		UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+		UINavigationBar.appearance().compactAppearance = navBarAppearance
+	}
+
 	var body: some View {
 		NavigationStack {
 			List {
