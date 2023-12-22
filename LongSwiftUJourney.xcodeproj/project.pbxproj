@@ -23,6 +23,8 @@
 		5437B87C2B34D10E00BC39B0 /* BasicImageRow_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5437B87B2B34D10E00BC39B0 /* BasicImageRow_13.swift */; };
 		5437B87E2B34D14900BC39B0 /* ContentView_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5437B87D2B34D14900BC39B0 /* ContentView_13.swift */; };
 		5437B8802B34D25500BC39B0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5437B87F2B34D25500BC39B0 /* SettingView.swift */; };
+		5437B8822B35D82C00BC39B0 /* DisplayOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5437B8812B35D82C00BC39B0 /* DisplayOrderType.swift */; };
+		5437B8852B35DA7200BC39B0 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5437B8842B35DA7200BC39B0 /* SettingStore.swift */; };
 		EA1DF7A02B27333200FB7816 /* ListForEachIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1DF79F2B27333200FB7816 /* ListForEachIdentifiable.swift */; };
 		EA1F26042B32D43700DD482C /* ModalViewsFloatingButtonsAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F26032B32D43700DD482C /* ModalViewsFloatingButtonsAlerts.swift */; };
 		EA1F26062B3302A000DD482C /* ArticleDetailedViewWithDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F26052B3302A000DD482C /* ArticleDetailedViewWithDismissButton.swift */; };
@@ -75,6 +77,8 @@
 		5437B87B2B34D10E00BC39B0 /* BasicImageRow_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicImageRow_13.swift; sourceTree = "<group>"; };
 		5437B87D2B34D14900BC39B0 /* ContentView_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_13.swift; sourceTree = "<group>"; };
 		5437B87F2B34D25500BC39B0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5437B8812B35D82C00BC39B0 /* DisplayOrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayOrderType.swift; sourceTree = "<group>"; };
+		5437B8842B35DA7200BC39B0 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
 		EA1DF79F2B27333200FB7816 /* ListForEachIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListForEachIdentifiable.swift; sourceTree = "<group>"; };
 		EA1F26032B32D43700DD482C /* ModalViewsFloatingButtonsAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewsFloatingButtonsAlerts.swift; sourceTree = "<group>"; };
 		EA1F26052B3302A000DD482C /* ArticleDetailedViewWithDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailedViewWithDismissButton.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				5437B8732B2F5A1E00BC39B0 /* Chapter 11 */,
 				EA1F26022B32D41500DD482C /* Chapter 12 */,
 				5437B8782B34D08C00BC39B0 /* Chapter 13 */,
+				5437B8832B35D83900BC39B0 /* Chapter 14 */,
 				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
 				04F4028C2B1324F1002C8C00 /* Preview Content */,
 			);
@@ -197,6 +202,15 @@
 				5437B87F2B34D25500BC39B0 /* SettingView.swift */,
 			);
 			path = "Chapter 13";
+			sourceTree = "<group>";
+		};
+		5437B8832B35D83900BC39B0 /* Chapter 14 */ = {
+			isa = PBXGroup;
+			children = (
+				5437B8812B35D82C00BC39B0 /* DisplayOrderType.swift */,
+				5437B8842B35DA7200BC39B0 /* SettingStore.swift */,
+			);
+			path = "Chapter 14";
 			sourceTree = "<group>";
 		};
 		EA1DF79E2B27330900FB7816 /* Chapter 10 */ = {
@@ -363,6 +377,7 @@
 				EA7D05E92B301803001C6560 /* Exercise_11_1.swift in Sources */,
 				5437B8752B2F5A4800BC39B0 /* HINavigationStack.swift in Sources */,
 				5437B8772B2F5BED00BC39B0 /* RestaurantDetailView.swift in Sources */,
+				5437B8822B35D82C00BC39B0 /* DisplayOrderType.swift in Sources */,
 				EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */,
 				EA1F26042B32D43700DD482C /* ModalViewsFloatingButtonsAlerts.swift in Sources */,
 				5437B87A2B34D0D100BC39B0 /* Restaurant_13.swift in Sources */,
@@ -388,6 +403,7 @@
 				EA46C4842B1E500200D940DD /* SwiftUIAnimations.swift in Sources */,
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
 				EA993D392B1B801700FB7D4E /* States.swift in Sources */,
+				5437B8852B35DA7200BC39B0 /* SettingStore.swift in Sources */,
 				EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */,
 				EAF033A82B26D887008A571E /* SubmitButton.swift in Sources */,
 				EA27749A2B21DAD0006E9847 /* CircleProgressIndicator.swift in Sources */,

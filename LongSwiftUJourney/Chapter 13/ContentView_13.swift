@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView_13: View {
 
+	@EnvironmentObject private var settingsStore: SettingStore
+
 	@State var restaurants = [
 		Restaurant_13(name: "Cafe Deadend", type: "Coffee & Tea Shop", phone: "232-923423", image: "cafedeadend", priceLevel: 3),
 		Restaurant_13(name: "Homei", type: "Cafe", phone: "348-233423", image: "homei", priceLevel: 3),
@@ -39,44 +41,46 @@ struct ContentView_13: View {
 	var body: some View {
 		NavigationStack {
 			List {
-				ForEach(restaurants) { restaurant in
-					BasicImageRow_13(restaurant: restaurant)
-						.contextMenu {
-							
-							Button(action: {
-								// mark the selected restaurant as check-in
-								self.checkIn(item: restaurant)
-							}) {
-								HStack {
-									Text("Check-in")
-									Image(systemName: "checkmark.seal.fill")
-								}
-							}
-							
-							Button(action: {
-								// delete the selected restaurant
-								self.delete(item: restaurant)
-							}) {
-								HStack {
-									Text("Delete")
-									Image(systemName: "trash")
-								}
-							}
-											 
-							Button(action: {
-								// mark the selected restaurant as favorite
-								self.setFavorite(item: restaurant)
+				ForEach(restaurants.sorted(by: self.settingsStore.displayOrder.predicate())) { restaurant in
+					if self.shouldShowItem(resaurant: restaurant) {
+						BasicImageRow_13(restaurant: restaurant)
+							.contextMenu {
 								
-							}) {
-								HStack {
-									Text("Favorite")
-									Image(systemName: "star")
+								Button(action: {
+									// mark the selected restaurant as check-in
+									self.checkIn(item: restaurant)
+								}) {
+									HStack {
+										Text("Check-in")
+										Image(systemName: "checkmark.seal.fill")
+									}
+								}
+								
+								Button(action: {
+									// delete the selected restaurant
+									self.delete(item: restaurant)
+								}) {
+									HStack {
+										Text("Delete")
+										Image(systemName: "trash")
+									}
+								}
+												 
+								Button(action: {
+									// mark the selected restaurant as favorite
+									self.setFavorite(item: restaurant)
+									
+								}) {
+									HStack {
+										Text("Favorite")
+										Image(systemName: "star")
+									}
 								}
 							}
+							.onTapGesture {
+								self.selectedRestaurant = restaurant
 						}
-						.onTapGesture {
-							self.selectedRestaurant = restaurant
-						}
+					}
 				}
 				.onDelete { (indexSet) in
 					self.restaurants.remove(atOffsets: indexSet)
@@ -96,11 +100,19 @@ struct ContentView_13: View {
 				}
 			}
 			.sheet(isPresented: $showSettings) {
-				SettingView()
+				SettingView().environmentObject(self.settingsStore)
 			}
 		}
 	}
-	
+
+	private func shouldShowItem(resaurant: Restaurant_13) -> Bool {
+		return (
+			!self.settingsStore.showCheckInOnly
+			|| resaurant.isCheckIn
+			&& (resaurant.priceLevel <= self.settingsStore.maxPriceLevel)
+		)
+	}
+
 	private func delete(item restaurant: Restaurant_13) {
 		if let index = self.restaurants.firstIndex(where: { $0.id == restaurant.id }) {
 			self.restaurants.remove(at: index)
@@ -123,6 +135,6 @@ struct ContentView_13: View {
 struct ContentView_Previews_13: PreviewProvider {
 
 	static var previews: some View {
-		ContentView_13()
+		ContentView_13().environmentObject(SettingStore())
 	}
 }

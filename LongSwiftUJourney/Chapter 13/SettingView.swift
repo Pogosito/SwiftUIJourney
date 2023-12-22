@@ -9,15 +9,11 @@ import SwiftUI
 
 struct SettingView: View {
 
-	private var displayOrders = [
-		"Alphabetically",
-		"Show Favorite First",
-		"Show Check-in First"
-	]
-
-	@State private var selectedOrder = 0
+	@State private var selectedOrder: DisplayOrderType = .alphabetical
 	@State private var showCheckOnly = false
 	@State private var maxPriceLevel = 5
+
+	@EnvironmentObject var settingsStore: SettingStore
 
 	var body: some View {
 		NavigationStack {
@@ -27,8 +23,8 @@ struct SettingView: View {
 						selection: $selectedOrder,
 						label: Text("Display order")
 					) {
-						ForEach(0..<displayOrders.count, id: \.self) {
-							Text(self.displayOrders[$0])
+						ForEach(DisplayOrderType.allCases, id: \.self) {
+							Text($0.text)
 						}
 					}
 				}
@@ -57,6 +53,22 @@ struct SettingView: View {
 				}
 			}
 			.navigationTitle("Settings")
+			.onAppear(perform: {
+				selectedOrder = settingsStore.displayOrder
+				showCheckOnly = settingsStore.showCheckInOnly
+				maxPriceLevel = settingsStore.maxPriceLevel
+			})
+			.toolbar(content: {
+				ToolbarItem(placement: .topBarTrailing) {
+					Button {
+						settingsStore.displayOrder = selectedOrder
+						settingsStore.showCheckInOnly = showCheckOnly
+						settingsStore.maxPriceLevel = maxPriceLevel
+					} label: {
+						Text("Save")
+					}
+				}
+			})
 		}
 	}
 }
@@ -64,6 +76,6 @@ struct SettingView: View {
 struct SettingView_Previews: PreviewProvider {
 
 	static var previews: some View {
-		SettingView()
+		SettingView().environmentObject(SettingStore())
 	}
 }
