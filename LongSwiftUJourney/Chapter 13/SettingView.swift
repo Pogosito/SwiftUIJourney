@@ -59,7 +59,7 @@ struct SettingView: View {
 				maxPriceLevel = settingsStore.maxPriceLevel
 			})
 			.toolbar(content: {
-				ToolbarItem(placement: .topBarTrailing) {
+				ToolbarItem(placement: .navigationBarTrailing) {
 					Button {
 						settingsStore.displayOrder = selectedOrder
 						settingsStore.showCheckInOnly = showCheckOnly

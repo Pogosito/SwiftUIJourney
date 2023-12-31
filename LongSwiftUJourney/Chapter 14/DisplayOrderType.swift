@@ -33,10 +33,10 @@ enum DisplayOrderType: Int, CaseIterable {
 	}
 
 	func predicate() -> (Restaurant_13, Restaurant_13) -> Bool {
-		return switch self {
-		case .alphabetical: { $0.name < $1.name }
-		case .favoriteFirst: { $0.isFavorite && !$1.isFavorite }
-		case .checkInFirst: { $0.isCheckIn && !$1.isCheckIn }
+		switch self {
+		case .alphabetical: return { $0.name < $1.name }
+		case .favoriteFirst: return { $0.isFavorite && !$1.isFavorite }
+		case .checkInFirst: return { $0.isCheckIn && !$1.isCheckIn }
 		}
 	}
 }

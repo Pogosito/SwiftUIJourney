@@ -34,6 +34,8 @@
 		EA27749A2B21DAD0006E9847 /* CircleProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2774992B21DAD0006E9847 /* CircleProgressIndicator.swift */; };
 		EA27749C2B21DF10006E9847 /* DotsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27749B2B21DF10006E9847 /* DotsLoader.swift */; };
 		EA27749E2B2229AC006E9847 /* ShapeChangerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27749D2B2229AC006E9847 /* ShapeChangerButton.swift */; };
+		EA2BB87A2B3D54DD00585ED0 /* DividerTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BB8792B3D54DD00585ED0 /* DividerTextFiled.swift */; };
+		EA2BB87C2B3D572100585ED0 /* CentredLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BB87B2B3D572100585ED0 /* CentredLabel.swift */; };
 		EA46C4792B1C765B00D940DD /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C4782B1C765B00D940DD /* Counter.swift */; };
 		EA46C47B2B1C775800D940DD /* WelcomePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C47A2B1C775800D940DD /* WelcomePath.swift */; };
 		EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46C47C2B1DD2B600D940DD /* Dome.swift */; };
@@ -55,9 +57,11 @@
 		EAA1B8E72B175BCB00C42DD2 /* CardViewsVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E62B175BCB00C42DD2 /* CardViewsVertical.swift */; };
 		EAA1B8E92B17616100C42DD2 /* CardViewsHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8E82B17616100C42DD2 /* CardViewsHorizontal.swift */; };
 		EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1B8EB2B1871AC00C42DD2 /* Buttons.swift */; };
+		EAA920EE2B3AA29800FDCB51 /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA920ED2B3AA29800FDCB51 /* RegistrationScreen.swift */; };
 		EAB538752B394783003BF728 /* Experiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB538742B394783003BF728 /* Experiments.swift */; };
 		EAF033A62B26D662008A571E /* AnyTransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF033A52B26D662008A571E /* AnyTransition+Extension.swift */; };
 		EAF033A82B26D887008A571E /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF033A72B26D887008A571E /* SubmitButton.swift */; };
+		EAF09AB82B3EBF65002246CA /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF09AB72B3EBF65002246CA /* UserRegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +93,8 @@
 		EA2774992B21DAD0006E9847 /* CircleProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressIndicator.swift; sourceTree = "<group>"; };
 		EA27749B2B21DF10006E9847 /* DotsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsLoader.swift; sourceTree = "<group>"; };
 		EA27749D2B2229AC006E9847 /* ShapeChangerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeChangerButton.swift; sourceTree = "<group>"; };
+		EA2BB8792B3D54DD00585ED0 /* DividerTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerTextFiled.swift; sourceTree = "<group>"; };
+		EA2BB87B2B3D572100585ED0 /* CentredLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentredLabel.swift; sourceTree = "<group>"; };
 		EA46C4782B1C765B00D940DD /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		EA46C47A2B1C775800D940DD /* WelcomePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePath.swift; sourceTree = "<group>"; };
 		EA46C47C2B1DD2B600D940DD /* Dome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dome.swift; sourceTree = "<group>"; };
@@ -110,9 +116,11 @@
 		EAA1B8E62B175BCB00C42DD2 /* CardViewsVertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewsVertical.swift; sourceTree = "<group>"; };
 		EAA1B8E82B17616100C42DD2 /* CardViewsHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewsHorizontal.swift; sourceTree = "<group>"; };
 		EAA1B8EB2B1871AC00C42DD2 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		EAA920ED2B3AA29800FDCB51 /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
 		EAB538742B394783003BF728 /* Experiments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiments.swift; sourceTree = "<group>"; };
 		EAF033A52B26D662008A571E /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
 		EAF033A72B26D887008A571E /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
+		EAF09AB72B3EBF65002246CA /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,7 @@
 				EA1F26022B32D41500DD482C /* Chapter 12 */,
 				5437B8782B34D08C00BC39B0 /* Chapter 13 */,
 				5437B8832B35D83900BC39B0 /* Chapter 14 */,
+				EAA920EC2B3AA27500FDCB51 /* Chapter 15 */,
 				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
 				04F4028C2B1324F1002C8C00 /* Preview Content */,
 			);
@@ -296,6 +305,17 @@
 			path = "Chapter 6";
 			sourceTree = "<group>";
 		};
+		EAA920EC2B3AA27500FDCB51 /* Chapter 15 */ = {
+			isa = PBXGroup;
+			children = (
+				EAA920ED2B3AA29800FDCB51 /* RegistrationScreen.swift */,
+				EA2BB8792B3D54DD00585ED0 /* DividerTextFiled.swift */,
+				EA2BB87B2B3D572100585ED0 /* CentredLabel.swift */,
+				EAF09AB72B3EBF65002246CA /* UserRegistrationViewModel.swift */,
+			);
+			path = "Chapter 15";
+			sourceTree = "<group>";
+		};
 		EAB538732B394769003BF728 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,12 +406,14 @@
 				EA2774982B20E7A6006E9847 /* LineLoadingIndicator.swift in Sources */,
 				54256E412B2A264000618144 /* FullImageRow.swift in Sources */,
 				EA27749C2B21DF10006E9847 /* DotsLoader.swift in Sources */,
+				EAA920EE2B3AA29800FDCB51 /* RegistrationScreen.swift in Sources */,
 				EA7D05E92B301803001C6560 /* Exercise_11_1.swift in Sources */,
 				5437B8752B2F5A4800BC39B0 /* HINavigationStack.swift in Sources */,
 				5437B8772B2F5BED00BC39B0 /* RestaurantDetailView.swift in Sources */,
 				5437B8822B35D82C00BC39B0 /* DisplayOrderType.swift in Sources */,
 				EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */,
 				EA1F26042B32D43700DD482C /* ModalViewsFloatingButtonsAlerts.swift in Sources */,
+				EAF09AB82B3EBF65002246CA /* UserRegistrationViewModel.swift in Sources */,
 				5437B87A2B34D0D100BC39B0 /* Restaurant_13.swift in Sources */,
 				EA27749E2B2229AC006E9847 /* ShapeChangerButton.swift in Sources */,
 				EA993D3B2B1B896000FB7D4E /* PlayStopButton.swift in Sources */,
@@ -407,6 +429,7 @@
 				EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */,
 				EA7D05ED2B30223B001C6560 /* ArticleDetailedView.swift in Sources */,
 				EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */,
+				EA2BB87C2B3D572100585ED0 /* CentredLabel.swift in Sources */,
 				EAA1B8E92B17616100C42DD2 /* CardViewsHorizontal.swift in Sources */,
 				54256E252B27A19D00618144 /* Restaurant.swift in Sources */,
 				EA993D3F2B1C616100FB7D4E /* Exercise_7_1.swift in Sources */,
@@ -414,6 +437,7 @@
 				5437B8712B2F4CDC00BC39B0 /* Exercise_10_1.swift in Sources */,
 				EA46C4842B1E500200D940DD /* SwiftUIAnimations.swift in Sources */,
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
+				EA2BB87A2B3D54DD00585ED0 /* DividerTextFiled.swift in Sources */,
 				EA993D392B1B801700FB7D4E /* States.swift in Sources */,
 				5437B8852B35DA7200BC39B0 /* SettingStore.swift in Sources */,
 				EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */,
