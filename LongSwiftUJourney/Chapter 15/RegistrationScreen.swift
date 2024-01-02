@@ -9,9 +9,7 @@ import SwiftUI
 
 struct RegistrationScreen: View {
 
-	@State private var username: String = ""
-	@State private var password: String = ""
-	@State private var confirmation: String = ""
+	@ObservedObject var viewModel = UserRegistrationViewModel()
 
 	var body: some View {
 		VStack {
@@ -20,18 +18,18 @@ struct RegistrationScreen: View {
 				.padding()
 			VStack(alignment: .leading) {
 				DividerTextFiled(
-					text: $username,
+					text: $viewModel.username,
 					placeholder: "Username"
 				)
 
 				CentredLabel(
 					text: "A minimum of 4 characters",
 					systemImageName: "xmark.square",
-					isStrikeThrough: false
+					isStrikeThrough: viewModel.isUsernameLengthValid
 				).padding(.vertical, 20)
 
 				DividerTextFiled(
-					text: $password,
+					text: $viewModel.password,
 					placeholder: "Password",
 					isSecure: true
 				)
@@ -39,20 +37,20 @@ struct RegistrationScreen: View {
 				CentredLabel(
 					text: "A minimum of 8 characters",
 					systemImageName: "lock.open",
-					isStrikeThrough: false
+					isStrikeThrough: viewModel.isPasswordLengthValid
 				)
 				.padding(.top, 20)
 
 				CentredLabel(
 					text: "One uppercase letter",
 					systemImageName: "lock.open",
-					isStrikeThrough: false
+					isStrikeThrough: viewModel.isPasswordCapitalLetter
 				)
 				.padding(.top, 1)
 				.padding(.bottom, 20)
 
 				DividerTextFiled(
-					text: $confirmation,
+					text: $viewModel.passwordConfirm,
 					placeholder: "Confirm password",
 					isSecure: true
 				)
@@ -60,7 +58,7 @@ struct RegistrationScreen: View {
 				CentredLabel(
 					text: "Your confirm password should be the same as password",
 					systemImageName: "xmark.square",
-					isStrikeThrough: false
+					isStrikeThrough: viewModel.isPasswordConfirmValid
 				)
 				.padding(.vertical)
 				.fixedSize(horizontal: false, vertical: true)
