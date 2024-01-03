@@ -18,6 +18,11 @@ struct BasicImageRow_16: View {
 				.cornerRadius(5)
 			Text(restaurant.name)
 
+			if restaurant.checkIn {
+				Image(systemName: "checkmark.seal.fill")
+					.foregroundColor(.red)
+			}
+
 			if restaurant.isFavorite {
 				Spacer()
 

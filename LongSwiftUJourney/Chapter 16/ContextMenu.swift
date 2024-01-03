@@ -42,6 +42,16 @@ struct ContextMenu: View {
 			ForEach(restaurants) { restaurant in
 				BasicImageRow_16(restaurant: restaurant)
 					.contextMenu {
+
+						Button(action: {
+							setCheckIn(item: restaurant)
+						}, label: {
+							HStack {
+								Text("Check-in")
+								Image(systemName: "checkmark.seal.fill")
+							}
+						})
+
 						Button(action: {
 							delete(item: restaurant)
 						}, label: {
@@ -69,6 +79,13 @@ struct ContextMenu: View {
 						isPresented: $isSheetPresented,
 						presenting: selectedResaurant
 					) { restaurant in
+
+						Button {
+							setCheckIn(item: restaurant)
+						} label: {
+							Text("Check-in")
+						}
+
 						Button {
 							setFavorite(item: restaurant)
 						} label: {
@@ -104,6 +121,14 @@ struct ContextMenu: View {
 			res.id == restaurant.id
 		}) {
 			self.restaurants[index].isFavorite.toggle()
+		}
+	}
+
+	func setCheckIn(item restaurant: Restaurant_16) {
+		if let index = self.restaurants.firstIndex(where: { res in
+			res.id == restaurant.id
+		}) {
+			self.restaurants[index].checkIn.toggle()
 		}
 	}
 }

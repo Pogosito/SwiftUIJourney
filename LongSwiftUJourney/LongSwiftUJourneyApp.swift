@@ -12,7 +12,7 @@ struct LongSwiftUJourneyApp: App {
 
 	var body: some Scene {
 		WindowGroup {
-			ContextMenu()
+			HiGestures()
 		}
 	}
 }
