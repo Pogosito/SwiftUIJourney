@@ -16,7 +16,13 @@ struct HiGestures: View {
 
 	@GestureState private var longPressTap = false
 	@GestureState private var dragOffset: CGSize = .zero
+
+	@GestureState private var dragOffset2: CGSize = .zero
+	@GestureState private var isPressed5: Bool = false
+
+	@State private var position: CGSize = .zero
 	@State private var finalOffset: CGSize = .zero
+	@State private var imageScaleValue: CGFloat = 1
 
 	var body: some View {
 		VStack {
@@ -69,10 +75,10 @@ struct HiGestures: View {
 			Divider()
 
 			HStack {
-				Text("Drag gesture")
+				Text("Drag")
 					.font(.largeTitle)
 				Spacer()
-				makeImage(toggle: isPressed3)
+				makeImage(toggle: isPressed4)
 					.offset(
 						x: finalOffset.width + dragOffset.width,
 						y: finalOffset.height + dragOffset.height)
@@ -91,6 +97,61 @@ struct HiGestures: View {
 								print("---------------------")
 								finalOffset.width += val.translation.width
 								finalOffset.height += val.translation.height
+							})
+					)
+			}.padding(.horizontal)
+
+			Divider()
+
+			HStack {
+				Text("Combining")
+					.font(.largeTitle)
+				Spacer()
+				makeImage(toggle: isPressed5)
+					.opacity(isPressed5 ? 0.5 : 1.0)
+					.offset(
+						x: position.width + dragOffset2.width,
+						y: position.height + dragOffset2.height
+					)
+					.animation(.easeInOut, value: dragOffset)
+					.gesture(
+						LongPressGesture(minimumDuration: 1.0)
+							.updating($isPressed5, body: { currentState, state, transaction in
+								state = currentState
+							})
+							.sequenced(before: DragGesture())
+							.updating($dragOffset2, body: { (value, state, transaction) in
+								switch value {
+								case .first(true): print("Tapped")
+								case .second(true, let drag): print("DRAAG")
+									state = drag?.translation ?? .zero
+								default: break
+								}
+							})
+							.onEnded({ value in
+								guard case .second(true, let drag?) = value else {
+									return
+								}
+								position.height += drag.translation.height
+								position.width += drag.translation.width
+							})
+					)
+			}.padding(.horizontal)
+
+			Divider()
+
+			HStack {
+				Text("Magnification")
+					.font(.largeTitle)
+				Spacer()
+				Image(systemName: "person.fill")
+					.scaleEffect(imageScaleValue, anchor: .center)
+					.font(.system(size: 50))
+					.foregroundColor(.indigo)
+					.gesture(
+						MagnificationGesture(minimumScaleDelta: 3)
+							.onChanged({ value in
+								imageScaleValue = value
 							})
 					)
 			}.padding(.horizontal)
