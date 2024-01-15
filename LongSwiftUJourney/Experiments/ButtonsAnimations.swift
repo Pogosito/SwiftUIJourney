@@ -9,35 +9,22 @@ import SwiftUI
 
 struct ButtonsAnimations: View {
 
-	@GestureState var isPressed: Bool = false
+	@State private var isPressed: Bool = false
+	@State private var isLight: Bool = false
 
 	var body: some View {
 		VStack {
-//			Button(action: {
-//				
-//			}, label: {
-				RoundedRectangle(cornerRadius: 10)
-					.foregroundStyle(.blue)
-					.frame(width: 50, height: 50)
-					.overlay {
-						ZStack {
-							Circle()
-								.foregroundStyle(.white)
-								.frame(width: 15, height: 15)
-
-							Circle()
-								.offset(x: 4, y: -4)
-								.frame(width: 15, height: 15)
-								.foregroundStyle(.green)
-						}
-					}
-					.modifier(PressActions(onPress: {
-						print("Press")
-					}, onRelease: {
-						print("release")
-					} ))
-//			})
+			MoonButton(height: 70, moonHight: 35, onPress: {
+				print("Press")
+			}, onRelease: {
+				print("Release")
+			})
 		}
+		.frame(
+			maxWidth: .infinity,
+			maxHeight: .infinity
+		)
+		.background(Color.gray)
 	}
 }
 

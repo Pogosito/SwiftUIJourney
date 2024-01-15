@@ -24,18 +24,24 @@ struct Press: ButtonStyle {
 }
 
 struct PressActions: ViewModifier {
+
+	@State private var isPresses: Bool = false
 	var onPress: () -> Void
 	var onRelease: () -> Void
-	
+
 	func body(content: Content) -> some View {
 		content
 			.simultaneousGesture(
 				DragGesture(minimumDistance: 0)
 					.onChanged({ _ in
-						onPress()
+						if !isPresses {
+							onPress()
+							isPresses = true
+						}
 					})
 					.onEnded({ _ in
 						onRelease()
+						isPresses = false
 					})
 			)
 	}

@@ -13,6 +13,7 @@
 		04F402962B132C37002C8C00 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402952B132C37002C8C00 /* Header.swift */; };
 		04F402982B132C95002C8C00 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402972B132C95002C8C00 /* PricingView.swift */; };
 		04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402992B1336F0002C8C00 /* Constants.swift */; };
+		540CDE0D2B55CA260026B2C1 /* MoonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540CDE0C2B55CA260026B2C1 /* MoonButton.swift */; };
 		54256E252B27A19D00618144 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E242B27A19D00618144 /* Restaurant.swift */; };
 		54256E3F2B2A258D00618144 /* BasicImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E3E2B2A258D00618144 /* BasicImageRow.swift */; };
 		54256E412B2A264000618144 /* FullImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E402B2A264000618144 /* FullImageRow.swift */; };
@@ -86,6 +87,7 @@
 		04F402952B132C37002C8C00 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		04F402972B132C95002C8C00 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
 		04F402992B1336F0002C8C00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		540CDE0C2B55CA260026B2C1 /* MoonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonButton.swift; sourceTree = "<group>"; };
 		54256E242B27A19D00618144 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		54256E3E2B2A258D00618144 /* BasicImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicImageRow.swift; sourceTree = "<group>"; };
 		54256E402B2A264000618144 /* FullImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageRow.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				EAB538742B394783003BF728 /* Experiments.swift */,
 				546D50212B52BD30002E424E /* ButtonsAnimations.swift */,
+				540CDE0C2B55CA260026B2C1 /* MoonButton.swift */,
 				546D50232B52CFFA002E424E /* Press.swift */,
 			);
 			path = Experiments;
@@ -488,6 +491,7 @@
 				EA7D05E92B301803001C6560 /* Exercise_11_1.swift in Sources */,
 				5437B8752B2F5A4800BC39B0 /* HINavigationStack.swift in Sources */,
 				5437B8772B2F5BED00BC39B0 /* RestaurantDetailView.swift in Sources */,
+				540CDE0D2B55CA260026B2C1 /* MoonButton.swift in Sources */,
 				5437B8822B35D82C00BC39B0 /* DisplayOrderType.swift in Sources */,
 				EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */,
 				EA1F26042B32D43700DD482C /* ModalViewsFloatingButtonsAlerts.swift in Sources */,
