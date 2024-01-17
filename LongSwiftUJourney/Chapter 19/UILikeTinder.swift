@@ -24,6 +24,9 @@ struct UILikeTinder: View {
 	}()
 
 	@State private var currentTripView: TripView?
+	@State private var lastIndex = 1
+
+	private let dragThreshold: CGFloat = 80.0
 
 	var body: some View {
 		VStack {
@@ -43,6 +46,17 @@ struct UILikeTinder: View {
 				ForEach(tripsViews) { tripView in
 					let isTopTrip: Bool = isTopTrip(tripView: tripView)
 					tripView
+						.overlay {
+							if self.dragState.translation.width < -self.dragThreshold && self.isTopTrip(tripView: tripView) {
+								Image(systemName: "x.circle")
+									.foregroundColor(.white)
+									.font(.system(size: 100))
+							} else if self.dragState.translation.width > self.dragThreshold && self.isTopTrip(tripView: tripView) {
+								Image(systemName: "heart.circle")
+									.foregroundColor(.white)
+									.font(.system(size: 100))
+							}
+						}
 						.zIndex(isTopTrip ? 1 : 0)
 						.offset(isTopTrip ? dragState.translation : .zero)
 						.scaleEffect(dragState.isDragging ? 0.95 : 1.0)
@@ -60,6 +74,16 @@ struct UILikeTinder: View {
 									default:
 										print(value)
 										break
+									}
+								})
+								.onEnded({ value in
+									guard case .second(true, let drag?) = value else {
+										return
+									}
+
+									if drag.translation.width < -self.dragThreshold ||
+										drag.translation.width > self.dragThreshold {
+										self.moveCard()
 									}
 								})
 						)
@@ -94,6 +118,13 @@ struct UILikeTinder: View {
 
 			Spacer()
 		}
+	}
+
+	private func moveCard() {
+		tripsViews.removeFirst()
+		lastIndex += 1
+		let trip = trips[lastIndex % trips.count]
+		tripsViews.append(TripView(trip: trip))
 	}
 
 	private func isTopTrip(tripView: TripView) -> Bool {

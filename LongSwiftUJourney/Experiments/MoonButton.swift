@@ -13,13 +13,14 @@ struct MoonButton: View {
 	@State private var isLight: Bool = false
 
 	var height: CGFloat = 50
-	var moonHight: CGFloat = 15
-	var cornerRadoius: CGFloat = 10
 	var onPress: () -> Void
 	var onRelease: () -> Void
 
 	var body: some View {
-		RoundedRectangle(cornerRadius: cornerRadoius)
+		var offest = height / 6
+		var littleCircleRadius = height / 2
+
+		return RoundedRectangle(cornerRadius: height / 5)
 			.foregroundStyle(
 				isLight
 				? .white
@@ -33,14 +34,14 @@ struct MoonButton: View {
 							isLight
 							? .yellow
 							: .indigo)
-						.frame(width: moonHight, height: moonHight)
+						.frame(width: littleCircleRadius, height: littleCircleRadius)
 
 					Circle()
 						.offset(
-							x: isPressed ? 0 : 4,
-							y: isPressed ? 0 : -4
+							x: isPressed ? 0 : offest,
+							y: isPressed ? 0 : -offest
 						)
-						.frame(width: moonHight, height: moonHight)
+						.frame(width: littleCircleRadius, height: littleCircleRadius)
 						.foregroundStyle(
 							isLight
 							? .white
