@@ -9,12 +9,8 @@ import SwiftUI
 
 struct ButtonsAnimations: View {
 
-	@State private var isPressed: Bool = false
-	@State private var isLight: Bool = false
-
-	@State private var offset: CGFloat = 0
-
-	@State private var isRunning = false
+	@State private var tapped: Bool = false
+	@State private var buttomWidth: CGFloat = 150
 
 	var body: some View {
 		ScrollView {
@@ -26,33 +22,24 @@ struct ButtonsAnimations: View {
 				})
 				.padding(.top)
 
-				RoundedRectangle(cornerRadius: 20)
-					.frame(width: 100, height: 100)
-					.foregroundStyle(.white)
-					.overlay {
-						Image(systemName: "heart.fill")
-							.offset(x: 0, y: isRunning ? 100 : 0)
-							.foregroundStyle(.red)
-							.font(.system(size: 50))
-					}
-					.overlay {
-						Image(systemName: "heart.fill")
-							.offset(x: 0, y: isRunning ? 0 : -100)
-							.foregroundStyle(.red)
-							.font(.system(size: 50))
-						
-					}
-					.onTapGesture {
-						if !isRunning {
-							withAnimation(.linear(duration: 0.5).speed(3).repeatCount(10, autoreverses: false)) {
-								isRunning = true
-							} completion: {
-								isRunning = false
-							}
-						}
-					}
-					.clipped()
+				SpinButton()
+
+				Capsule()
+					.frame(width: buttomWidth, height: 50)
 					.padding(.bottom)
+					.animation(
+						.spring(
+							response: 0.5,
+							dampingFraction: 0.5,
+							blendDuration: 0.5
+						).speed(2),
+
+						value: buttomWidth
+					)
+					.onTapGesture {
+						tapped = !tapped
+						buttomWidth = tapped ? 150 : 50
+					}
 			}
 			.frame(
 				maxWidth: .infinity,

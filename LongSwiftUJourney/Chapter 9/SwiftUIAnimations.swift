@@ -91,7 +91,7 @@ struct SwiftUIAnimations: View {
 								}
 							}
 							.padding(.horizontal)
-						
+
 						LineLoadingIndicator(
 							isRunning: $isRunning
 						).onTapGesture {
@@ -121,7 +121,7 @@ struct SwiftUIAnimations: View {
 
 					VStack {
 						HStack(alignment: .top) {
-							
+
 							VStack {
 								makeRoundedRectangle(
 									size: .init(width: 100, height: 100),
@@ -132,7 +132,7 @@ struct SwiftUIAnimations: View {
 										self.scaleShow.toggle()
 									}
 								}
-								
+
 								if scaleShow {
 									makeRoundedRectangle(
 										with: "",
@@ -143,7 +143,7 @@ struct SwiftUIAnimations: View {
 									)
 								}
 							}
-							
+
 							VStack {
 								makeRoundedRectangle(
 									size: .init(width: 100, height: 100),
@@ -154,7 +154,7 @@ struct SwiftUIAnimations: View {
 										self.offsetShow.toggle()
 									}
 								}
-								
+
 								if offsetShow {
 									makeRoundedRectangle(
 										with: "",
@@ -165,7 +165,7 @@ struct SwiftUIAnimations: View {
 									)
 								}
 							}
-							
+
 							VStack {
 								makeRoundedRectangle(
 									size: .init(width: 100, height: 100),
@@ -176,7 +176,7 @@ struct SwiftUIAnimations: View {
 										self.comboShow.toggle()
 									}
 								}
-								
+
 								if comboShow {
 									makeRoundedRectangle(
 										with: "",

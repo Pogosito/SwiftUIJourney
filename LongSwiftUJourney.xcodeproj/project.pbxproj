@@ -13,6 +13,14 @@
 		04F402962B132C37002C8C00 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402952B132C37002C8C00 /* Header.swift */; };
 		04F402982B132C95002C8C00 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402972B132C95002C8C00 /* PricingView.swift */; };
 		04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F402992B1336F0002C8C00 /* Constants.swift */; };
+		540525132B60D9FC007BD8C0 /* AnyTransition+Extenstion_19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540525122B60D9FC007BD8C0 /* AnyTransition+Extenstion_19.swift */; };
+		540525152B60E432007BD8C0 /* SpinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540525142B60E432007BD8C0 /* SpinButton.swift */; };
+		540525542B67775D007BD8C0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540525532B67775D007BD8C0 /* Transaction.swift */; };
+		540525562B677784007BD8C0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540525552B677784007BD8C0 /* Card.swift */; };
+		540525582B6777BA007BD8C0 /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540525572B6777BA007BD8C0 /* TransactionHistoryView.swift */; };
+		5405255A2B6777EB007BD8C0 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540525592B6777EB007BD8C0 /* TransactionView.swift */; };
+		5405255C2B677B17007BD8C0 /* BankCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405255B2B677B17007BD8C0 /* BankCardView.swift */; };
+		5405255E2B67820F007BD8C0 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405255D2B67820F007BD8C0 /* WalletView.swift */; };
 		540CDE0D2B55CA260026B2C1 /* MoonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540CDE0C2B55CA260026B2C1 /* MoonButton.swift */; };
 		54256E252B27A19D00618144 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E242B27A19D00618144 /* Restaurant.swift */; };
 		54256E3F2B2A258D00618144 /* BasicImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E3E2B2A258D00618144 /* BasicImageRow.swift */; };
@@ -87,6 +95,14 @@
 		04F402952B132C37002C8C00 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		04F402972B132C95002C8C00 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
 		04F402992B1336F0002C8C00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		540525122B60D9FC007BD8C0 /* AnyTransition+Extenstion_19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extenstion_19.swift"; sourceTree = "<group>"; };
+		540525142B60E432007BD8C0 /* SpinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinButton.swift; sourceTree = "<group>"; };
+		540525532B67775D007BD8C0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		540525552B677784007BD8C0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		540525572B6777BA007BD8C0 /* TransactionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
+		540525592B6777EB007BD8C0 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		5405255B2B677B17007BD8C0 /* BankCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardView.swift; sourceTree = "<group>"; };
+		5405255D2B67820F007BD8C0 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		540CDE0C2B55CA260026B2C1 /* MoonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonButton.swift; sourceTree = "<group>"; };
 		54256E242B27A19D00618144 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		54256E3E2B2A258D00618144 /* BasicImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicImageRow.swift; sourceTree = "<group>"; };
@@ -202,8 +218,9 @@
 				546D500C2B458D06002E424E /* Chapter 17 */,
 				546D500F2B49B27C002E424E /* Chapter 18 */,
 				546D50182B4D5735002E424E /* Chapter 19 */,
-				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
+				540525522B67773F007BD8C0 /* Chapter 20 */,
 				04F4028C2B1324F1002C8C00 /* Preview Content */,
+				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
 			);
 			path = LongSwiftUJourney;
 			sourceTree = "<group>";
@@ -226,6 +243,19 @@
 				04F402992B1336F0002C8C00 /* Constants.swift */,
 			);
 			path = "Chapter 4";
+			sourceTree = "<group>";
+		};
+		540525522B67773F007BD8C0 /* Chapter 20 */ = {
+			isa = PBXGroup;
+			children = (
+				540525532B67775D007BD8C0 /* Transaction.swift */,
+				540525552B677784007BD8C0 /* Card.swift */,
+				5405255B2B677B17007BD8C0 /* BankCardView.swift */,
+				540525592B6777EB007BD8C0 /* TransactionView.swift */,
+				540525572B6777BA007BD8C0 /* TransactionHistoryView.swift */,
+				5405255D2B67820F007BD8C0 /* WalletView.swift */,
+			);
+			path = "Chapter 20";
 			sourceTree = "<group>";
 		};
 		5437B8732B2F5A1E00BC39B0 /* Chapter 11 */ = {
@@ -295,6 +325,7 @@
 				546D501B2B4D5C11002E424E /* UILikeTinder.swift */,
 				546D501D2B52B323002E424E /* DragState.swift */,
 				546D501F2B52B44D002E424E /* TripView.swift */,
+				540525122B60D9FC007BD8C0 /* AnyTransition+Extenstion_19.swift */,
 			);
 			path = "Chapter 19";
 			sourceTree = "<group>";
@@ -396,6 +427,7 @@
 				EAB538742B394783003BF728 /* Experiments.swift */,
 				546D50212B52BD30002E424E /* ButtonsAnimations.swift */,
 				540CDE0C2B55CA260026B2C1 /* MoonButton.swift */,
+				540525142B60E432007BD8C0 /* SpinButton.swift */,
 				546D50232B52CFFA002E424E /* Press.swift */,
 			);
 			path = Experiments;
@@ -474,6 +506,7 @@
 				EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */,
 				5437B87C2B34D10E00BC39B0 /* BasicImageRow_13.swift in Sources */,
 				EA46C47F2B1DD63500D940DD /* PlayButton.swift in Sources */,
+				5405255E2B67820F007BD8C0 /* WalletView.swift in Sources */,
 				546D50172B4B14A1002E424E /* RestaurantDetailView_18.swift in Sources */,
 				EA1F26062B3302A000DD482C /* ArticleDetailedViewWithDismissButton.swift in Sources */,
 				EA993D3D2B1B89F100FB7D4E /* CounterButton.swift in Sources */,
@@ -484,6 +517,7 @@
 				04F4029A2B1336F0002C8C00 /* Constants.swift in Sources */,
 				EA2774982B20E7A6006E9847 /* LineLoadingIndicator.swift in Sources */,
 				54256E412B2A264000618144 /* FullImageRow.swift in Sources */,
+				540525132B60D9FC007BD8C0 /* AnyTransition+Extenstion_19.swift in Sources */,
 				EA27749C2B21DF10006E9847 /* DotsLoader.swift in Sources */,
 				EAA920EE2B3AA29800FDCB51 /* RegistrationScreen.swift in Sources */,
 				546D500E2B458D21002E424E /* HiGestures.swift in Sources */,
@@ -495,6 +529,7 @@
 				5437B8822B35D82C00BC39B0 /* DisplayOrderType.swift in Sources */,
 				EAA1B8EC2B1871AC00C42DD2 /* Buttons.swift in Sources */,
 				EA1F26042B32D43700DD482C /* ModalViewsFloatingButtonsAlerts.swift in Sources */,
+				5405255A2B6777EB007BD8C0 /* TransactionView.swift in Sources */,
 				546D50152B4B144A002E424E /* BasicImageRow_18.swift in Sources */,
 				EAF09AB82B3EBF65002246CA /* UserRegistrationViewModel.swift in Sources */,
 				5437B87A2B34D0D100BC39B0 /* Restaurant_13.swift in Sources */,
@@ -519,17 +554,21 @@
 				EAA1B8E92B17616100C42DD2 /* CardViewsHorizontal.swift in Sources */,
 				546D50242B52CFFA002E424E /* Press.swift in Sources */,
 				54256E252B27A19D00618144 /* Restaurant.swift in Sources */,
+				540525152B60E432007BD8C0 /* SpinButton.swift in Sources */,
 				EA993D3F2B1C616100FB7D4E /* Exercise_7_1.swift in Sources */,
 				04F402872B1324EC002C8C00 /* LongSwiftUJourneyApp.swift in Sources */,
 				546D50202B52B44D002E424E /* TripView.swift in Sources */,
 				546D50072B44878D002E424E /* ContextMenu.swift in Sources */,
 				5437B8712B2F4CDC00BC39B0 /* Exercise_10_1.swift in Sources */,
+				540525562B677784007BD8C0 /* Card.swift in Sources */,
 				EA46C4842B1E500200D940DD /* SwiftUIAnimations.swift in Sources */,
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
+				540525542B67775D007BD8C0 /* Transaction.swift in Sources */,
 				546D501A2B4D5B3D002E424E /* Trip.swift in Sources */,
 				EA2BB87A2B3D54DD00585ED0 /* DividerTextFiled.swift in Sources */,
 				EA993D392B1B801700FB7D4E /* States.swift in Sources */,
 				546D50222B52BD30002E424E /* ButtonsAnimations.swift in Sources */,
+				5405255C2B677B17007BD8C0 /* BankCardView.swift in Sources */,
 				5437B8852B35DA7200BC39B0 /* SettingStore.swift in Sources */,
 				EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */,
 				EAF033A82B26D887008A571E /* SubmitButton.swift in Sources */,
@@ -539,6 +578,7 @@
 				EA7D05EB2B301EF2001C6560 /* ArticleView.swift in Sources */,
 				EA2774942B20DD3D006E9847 /* Heart.swift in Sources */,
 				546D50092B448CEC002E424E /* BasicImageRow_16.swift in Sources */,
+				540525582B6777BA007BD8C0 /* TransactionHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

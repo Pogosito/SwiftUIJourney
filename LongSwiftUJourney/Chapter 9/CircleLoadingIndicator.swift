@@ -13,6 +13,7 @@ struct CircleLoadingIndicator: View {
 
 	var body: some View {
 		ZStack {
+
 			Circle()
 				.stroke(Color.gray, lineWidth: 15)
 				.frame(width: 100, height: 100)

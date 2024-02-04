@@ -17,8 +17,8 @@ struct MoonButton: View {
 	var onRelease: () -> Void
 
 	var body: some View {
-		var offest = height / 6
-		var littleCircleRadius = height / 2
+		let offest = height / 6
+		let littleCircleRadius = height / 2
 
 		return RoundedRectangle(cornerRadius: height / 5)
 			.foregroundStyle(

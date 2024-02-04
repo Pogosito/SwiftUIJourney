@@ -25,6 +25,7 @@ struct UILikeTinder: View {
 
 	@State private var currentTripView: TripView?
 	@State private var lastIndex = 1
+	@State private var removalTransition = AnyTransition.trailingBottom
 
 	private let dragThreshold: CGFloat = 80.0
 
@@ -61,6 +62,7 @@ struct UILikeTinder: View {
 						.offset(isTopTrip ? dragState.translation : .zero)
 						.scaleEffect(dragState.isDragging ? 0.95 : 1.0)
 						.rotationEffect(Angle(degrees: isTopTrip ? Double(dragState.translation.width / 10) : 0))
+						.transition(removalTransition)
 						.animation(.interpolatingSpring(stiffness: 180, damping: 100), value: dragState.translation)
 						.gesture(
 							LongPressGesture(minimumDuration: 0.01)
@@ -74,6 +76,19 @@ struct UILikeTinder: View {
 									default:
 										print(value)
 										break
+									}
+								})
+								.onChanged({ value in
+									guard case .second(true, let drag?) = value else {
+										return
+									}
+
+									if drag.translation.width < -self.dragThreshold {
+										self.removalTransition = .leadingBottom
+									}
+
+									if drag.translation.width > self.dragThreshold {
+										self.removalTransition = .trailingBottom
 									}
 								})
 								.onEnded({ value in
