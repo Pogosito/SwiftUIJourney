@@ -21,6 +21,11 @@
 		5405255A2B6777EB007BD8C0 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540525592B6777EB007BD8C0 /* TransactionView.swift */; };
 		5405255C2B677B17007BD8C0 /* BankCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405255B2B677B17007BD8C0 /* BankCardView.swift */; };
 		5405255E2B67820F007BD8C0 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405255D2B67820F007BD8C0 /* WalletView.swift */; };
+		5406E8602B835D4200394DF0 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E85F2B835D4200394DF0 /* Loan.swift */; };
+		5406E8622B835DCB00394DF0 /* LoanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8612B835DCB00394DF0 /* LoanStore.swift */; };
+		5406E8642B836A2D00394DF0 /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8632B836A2D00394DF0 /* LoanCellView.swift */; };
+		5406E8662B8374E700394DF0 /* LoanContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8652B8374E700394DF0 /* LoanContentView.swift */; };
+		5406E8682B8384DF00394DF0 /* LoanFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8672B8384DF00394DF0 /* LoanFilterView.swift */; };
 		540CDE0D2B55CA260026B2C1 /* MoonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540CDE0C2B55CA260026B2C1 /* MoonButton.swift */; };
 		54256E252B27A19D00618144 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E242B27A19D00618144 /* Restaurant.swift */; };
 		54256E3F2B2A258D00618144 /* BasicImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54256E3E2B2A258D00618144 /* BasicImageRow.swift */; };
@@ -103,6 +108,11 @@
 		540525592B6777EB007BD8C0 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		5405255B2B677B17007BD8C0 /* BankCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardView.swift; sourceTree = "<group>"; };
 		5405255D2B67820F007BD8C0 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		5406E85F2B835D4200394DF0 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		5406E8612B835DCB00394DF0 /* LoanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanStore.swift; sourceTree = "<group>"; };
+		5406E8632B836A2D00394DF0 /* LoanCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCellView.swift; sourceTree = "<group>"; };
+		5406E8652B8374E700394DF0 /* LoanContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanContentView.swift; sourceTree = "<group>"; };
+		5406E8672B8384DF00394DF0 /* LoanFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFilterView.swift; sourceTree = "<group>"; };
 		540CDE0C2B55CA260026B2C1 /* MoonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonButton.swift; sourceTree = "<group>"; };
 		54256E242B27A19D00618144 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		54256E3E2B2A258D00618144 /* BasicImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicImageRow.swift; sourceTree = "<group>"; };
@@ -219,6 +229,7 @@
 				546D500F2B49B27C002E424E /* Chapter 18 */,
 				546D50182B4D5735002E424E /* Chapter 19 */,
 				540525522B67773F007BD8C0 /* Chapter 20 */,
+				5406E85E2B835D3000394DF0 /* Chapter 21 */,
 				04F4028C2B1324F1002C8C00 /* Preview Content */,
 				04F4028A2B1324F1002C8C00 /* Assets.xcassets */,
 			);
@@ -256,6 +267,18 @@
 				5405255D2B67820F007BD8C0 /* WalletView.swift */,
 			);
 			path = "Chapter 20";
+			sourceTree = "<group>";
+		};
+		5406E85E2B835D3000394DF0 /* Chapter 21 */ = {
+			isa = PBXGroup;
+			children = (
+				5406E85F2B835D4200394DF0 /* Loan.swift */,
+				5406E8612B835DCB00394DF0 /* LoanStore.swift */,
+				5406E8632B836A2D00394DF0 /* LoanCellView.swift */,
+				5406E8652B8374E700394DF0 /* LoanContentView.swift */,
+				5406E8672B8384DF00394DF0 /* LoanFilterView.swift */,
+			);
+			path = "Chapter 21";
 			sourceTree = "<group>";
 		};
 		5437B8732B2F5A1E00BC39B0 /* Chapter 11 */ = {
@@ -503,10 +526,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5406E8662B8374E700394DF0 /* LoanContentView.swift in Sources */,
 				EA7E57442B1474F50086CCD3 /* Exercise_4_2.swift in Sources */,
 				5437B87C2B34D10E00BC39B0 /* BasicImageRow_13.swift in Sources */,
 				EA46C47F2B1DD63500D940DD /* PlayButton.swift in Sources */,
 				5405255E2B67820F007BD8C0 /* WalletView.swift in Sources */,
+				5406E8642B836A2D00394DF0 /* LoanCellView.swift in Sources */,
 				546D50172B4B14A1002E424E /* RestaurantDetailView_18.swift in Sources */,
 				EA1F26062B3302A000DD482C /* ArticleDetailedViewWithDismissButton.swift in Sources */,
 				EA993D3D2B1B89F100FB7D4E /* CounterButton.swift in Sources */,
@@ -548,6 +573,7 @@
 				EA2774962B20E0B2006E9847 /* CircleLoadingIndicator.swift in Sources */,
 				546D501C2B4D5C11002E424E /* UILikeTinder.swift in Sources */,
 				EA7D05ED2B30223B001C6560 /* ArticleDetailedView.swift in Sources */,
+				5406E8602B835D4200394DF0 /* Loan.swift in Sources */,
 				546D501E2B52B323002E424E /* DragState.swift in Sources */,
 				EA993D1A2B19EA9F00FB7D4E /* ButtonStyles.swift in Sources */,
 				EA2BB87C2B3D572100585ED0 /* CentredLabel.swift in Sources */,
@@ -562,6 +588,7 @@
 				5437B8712B2F4CDC00BC39B0 /* Exercise_10_1.swift in Sources */,
 				540525562B677784007BD8C0 /* Card.swift in Sources */,
 				EA46C4842B1E500200D940DD /* SwiftUIAnimations.swift in Sources */,
+				5406E8682B8384DF00394DF0 /* LoanFilterView.swift in Sources */,
 				EAA1B8E52B16399E00C42DD2 /* CardView.swift in Sources */,
 				540525542B67775D007BD8C0 /* Transaction.swift in Sources */,
 				546D501A2B4D5B3D002E424E /* Trip.swift in Sources */,
@@ -573,6 +600,7 @@
 				EA46C47D2B1DD2B600D940DD /* Dome.swift in Sources */,
 				EAF033A82B26D887008A571E /* SubmitButton.swift in Sources */,
 				EA27749A2B21DAD0006E9847 /* CircleProgressIndicator.swift in Sources */,
+				5406E8622B835DCB00394DF0 /* LoanStore.swift in Sources */,
 				04F402982B132C95002C8C00 /* PricingView.swift in Sources */,
 				EA46C47B2B1C775800D940DD /* WelcomePath.swift in Sources */,
 				EA7D05EB2B301EF2001C6560 /* ArticleView.swift in Sources */,
